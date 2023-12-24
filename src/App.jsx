@@ -19,15 +19,15 @@ export default function App() {
       <Navbar />
       <main className={styles.main_container}>
         <Routes>
-          <Route path="/piadas" element={<Home />} />
-          <Route path="/piadas/jokes" element={<Jokes />} />
-          <Route path="/piadas/login" element={<Login />} />
-          <Route path="/piadas/register" element={<Register />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/jokes" element={<Jokes />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
           <Route element={<RequireAuth />}>
-            <Route path="/piadas/favorites" element={<Favorites />} />
-            <Route path="/piadas/user/:id" element={<UserProfile />} />
+            <Route path="/favorites" element={<Favorites />} />
+            <Route path="/user/:id" element={<UserProfile />} />
           </Route>
-          <Route path="/piadas/*" element={<Missing />} />
+          <Route path="*" element={<Missing />} />
         </Routes>
       </main>
       <Footer />
