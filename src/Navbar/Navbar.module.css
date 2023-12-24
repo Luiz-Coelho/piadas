@@ -1,0 +1,64 @@
+.navbar_container {
+  background-color: black;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1em;
+  transition: 0.5s;
+  border-bottom: 1px solid gray;
+}
+
+.links_container {
+  display: flex;
+  align-items: center;
+}
+
+.links_container a,
+button {
+  text-decoration: none;
+  border: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.links_container a:hover,
+button:hover {
+  color: #fbbc39;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  padding: 1em;
+}
+
+svg {
+  padding-top: 5px;
+  font-size: 1.1em;
+}
+
+img {
+  width: 2em;
+}
+
+.auth_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile_picture {
+  border: 2px solid white;
+  transition: 0.5s;
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 50%;
+  object-fit: fill;
+  margin-top: 8px;
+}
+
+.profile_picture:hover {
+  border: 2px solid #fbbc39;
+}

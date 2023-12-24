@@ -1,0 +1,38 @@
+.footer_container {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3em;
+  padding: 2em;
+  margin-top: auto;
+}
+
+.social_media_container {
+  display: flex;
+  gap: 2em;
+}
+
+.social_media_container a {
+  text-decoration: none;
+  color: white;
+  border: none;
+  background-color: black;
+}
+
+.social_media_container svg {
+  font-size: 1.8em;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.social_media_container svg:hover {
+  color: #fbbc39;
+}
+
+.copyright_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

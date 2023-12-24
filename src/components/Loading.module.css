@@ -1,0 +1,11 @@
+.loading_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10em;
+}
+
+.loading_container img {
+  width: 10em;
+  border-radius: 50%;
+}

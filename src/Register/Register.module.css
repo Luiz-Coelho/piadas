@@ -1,0 +1,38 @@
+.register_container {
+  display: flex;
+  flex-direction: column;
+  margin: 4em auto;
+  padding: 2em;
+  gap: 1em;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+}
+
+.register_container h2 {
+  text-align: center;
+}
+
+.already_registered_div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: white;
+  border-top: 1px solid #dbdbdb;
+  padding: 1em;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.already_registered_link {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: #fbbc39;
+  text-decoration: underline;
+  margin-left: -10px;
+}
+
+.already_registered_link:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(231, 173, 53);
+}

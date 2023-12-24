@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body,
+#root {
+  background-color: #fafafa;
+}
+
+html {
+  height: 100%;
+}
+
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

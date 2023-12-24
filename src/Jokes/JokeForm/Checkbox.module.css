@@ -1,0 +1,12 @@
+.checkbox_field {
+  display: flex;
+  padding: 1em;
+  gap: 1em;
+}
+
+.checkbox_field label {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  gap: 0.4em;
+}

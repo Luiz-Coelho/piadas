@@ -1,0 +1,120 @@
+.form_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
+
+.form_container button {
+  background-color: #fbbc39;
+  color: black;
+  text-decoration: none;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.form_container button:hover {
+  background-color: rgb(231, 173, 53);
+}
+
+.register_input {
+  font-size: 1em;
+  padding: 1em;
+  width: 20em;
+  border: 1px solid #dbdbdb;
+  background-color: rgb(245, 245, 245);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.profile_picture_container {
+  position: relative;
+}
+
+.profile_picture_container label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1em;
+  padding: 1em;
+  width: 10em;
+  height: 10em;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+
+.profile_picture_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.delete_btn {
+  position: absolute;
+  bottom: 20px;
+  right: 33%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete_btn svg {
+  padding: 1em;
+  font-size: 1em;
+  color: black;
+  position: absolute;
+}
+
+.no_picture {
+  font-size: 5em;
+}
+
+.file_name {
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 1em;
+}
+
+.input_div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.instructions {
+  background-color: black;
+  color: white;
+  font-size: 0.75em;
+  padding: 1em;
+  text-wrap: wrap;
+  border-radius: 1em;
+  max-width: 25em;
+  margin: 1em auto;
+}
+
+.valid {
+  color: limegreen;
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+
+.invalid {
+  color: red;
+  position: absolute;
+  right: 0;
+  top: -5px;
+}

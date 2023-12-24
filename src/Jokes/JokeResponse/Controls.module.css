@@ -1,0 +1,32 @@
+.controls_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.another_joke,
+.like_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 2em;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.5s;
+  width: 10em;
+  height: 3em;
+}
+
+.another_joke:hover,
+.like_button:hover {
+  background-color: #fbbc39;
+  color: black;
+}
+
+.like_button svg {
+  font-size: 2em;
+}
