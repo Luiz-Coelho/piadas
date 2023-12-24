@@ -11,14 +11,6 @@ export default function Home() {
           <Link className={styles.link}>Clicando aqui</Link>
         </p>
       </div>
-
-      <div className={styles.warning_div}>
-        <h2>Cuidado</h2>
-        <p>
-          Existem piadas de humor tóxico no banco de dados a seguir, de cunho
-          religioso, sexista, racista e outros.
-        </p>
-      </div>
     </section>
   );
 }
