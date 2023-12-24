@@ -23,7 +23,9 @@ export default function Jokes() {
   }
 
   function randomJoke() {
-    getData("joke/Any").then((data) => {
+    getData(
+      "joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit"
+    ).then((data) => {
       setJokeData(data);
       setFormVisibility(false);
     });

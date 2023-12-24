@@ -11,38 +11,20 @@ export default function JokeForm({ handleSubmit, getData }) {
 
   const [selectedLanguage, setSelectedLanguage] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [selectedBlacklist, setSelectedBlacklist] = useState([]);
   const [type, setType] = useState("");
 
   function submit(e) {
     e.preventDefault();
 
-    let url = `joke/${selectedCategory}?`;
+    let url = `joke/${selectedCategory}?blacklistFlags=nsfw,religious,political,racist,sexist,explicit`;
 
     if (selectedLanguage !== "en") {
       url += `lang=${selectedLanguage}&`;
-    }
-    if (selectedBlacklist) {
-      url += `blacklistFlags=${selectedBlacklist}&`;
     }
     if (type !== "any") {
       url += `type=${type}`;
     }
     handleSubmit(url);
-  }
-
-  function handleBlacklist(e) {
-    const { name, checked } = e.target;
-
-    setSelectedBlacklist((prevSelected) => {
-      if (checked) {
-        return [...prevSelected, name];
-      } else {
-        return prevSelected.filter(
-          (selectedBlacklist) => selectedBlacklist !== name
-        );
-      }
-    });
   }
 
   function handleLanguage(e) {
@@ -61,7 +43,6 @@ export default function JokeForm({ handleSubmit, getData }) {
     return Promise.all([
       getData("languages").catch((err) => console.log(err)),
       getData("categories").catch((err) => console.log(err)),
-      getData("flags").catch((err) => console.log(err)),
     ]);
   }
 
@@ -90,11 +71,6 @@ export default function JokeForm({ handleSubmit, getData }) {
         options={projectData[1]?.categories || []}
         onChange={handleCategory}
         text={"Selecione a categoria"}
-      />
-      <Checkbox
-        options={projectData[2]?.flags || []}
-        onChange={handleBlacklist}
-        legend={"Tag to Blacklist"}
       />
       <Radio onChange={handleType} />
       <div className={styles.form_controls}>
