@@ -22,7 +22,7 @@ export default function JokeForm({ handleSubmit, getData }) {
       url += `lang=${selectedLanguage}&`;
     }
     if (type !== "any") {
-      url += `type=${type}`;
+      url += `&type=${type}`;
     }
     handleSubmit(url);
   }
