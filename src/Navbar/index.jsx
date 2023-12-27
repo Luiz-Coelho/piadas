@@ -11,7 +11,7 @@ export default function Navbar() {
   const { user } = useAuth();
 
   return (
-    <nav className={styles.navbar_container}>
+    <header className={styles.navbar_container}>
       <div className={styles.links_container}>
         <Link to={"/"}>Home</Link>
         <Link to={"/jokes"}>Piadas</Link>
@@ -20,6 +20,6 @@ export default function Navbar() {
         </Link>
         {user ? <UserAuthenticated /> : <UserNotAuthenticated />}
       </div>
-    </nav>
+    </header>
   );
 }
