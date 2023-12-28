@@ -7,7 +7,15 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
+}
+
+.header_div {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .form_controls {
@@ -15,6 +23,9 @@
   align-items: center;
   justify-content: space-around;
   gap: 2rem;
+
+  padding-top: 1rem;
+  border-top: 1px solid #dbdbdb;
 }
 
 .form_controls button {

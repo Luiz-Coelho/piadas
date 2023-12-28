@@ -71,15 +71,12 @@ export default function Jokes() {
   return (
     <Container>
       <section className={styles.jokes_container}>
-        <div className={styles.jokes_header}>
-          <div className={styles.buttons_div}>
-            <button onClick={randomJoke}>Piada aleatória</button>
-            <Link to={"https://sv443.net/jokeapi/v2/#submit"} target="_blank">
-              Enviar uma piada
-            </Link>
-          </div>
-          <SearchBox onClick={clickSearch} onChange={handleSearch} />
-        </div>
+        <button onClick={randomJoke} className={styles.random_joke_button}>
+          Ver piada aleatória
+        </button>
+        <div className={styles.border_div}></div>
+        <SearchBox onClick={clickSearch} onChange={handleSearch} />
+        <div className={styles.border_div}></div>
         <div className={styles.form_div}>
           {formVisibility && (
             <JokeForm getData={getData} handleSubmit={handleSubmit} />
@@ -98,6 +95,14 @@ export default function Jokes() {
             />
           )}
         </div>
+        <div className={styles.border_div}></div>
+        <Link
+          to={"https://sv443.net/jokeapi/v2/#submit"}
+          target="_blank"
+          className={styles.submit_joke_button}
+        >
+          Enviar uma piada
+        </Link>
       </section>
     </Container>
   );

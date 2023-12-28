@@ -1,7 +1,8 @@
 .login_container {
+  margin: 0 auto;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  margin: 4rem auto;
   padding: 2rem;
   gap: 1rem;
   background-color: white;

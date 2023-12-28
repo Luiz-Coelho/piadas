@@ -3,9 +3,7 @@
   display: flex;
   border-radius: 2rem;
   border: 2px solid gray;
-  width: 25%;
-  min-width: 300px;
-  max-width: 425px;
+  width: 30rem;
 }
 
 .search_box_container input {

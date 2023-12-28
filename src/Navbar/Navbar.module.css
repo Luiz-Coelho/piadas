@@ -7,13 +7,15 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  padding: 1rem;
+  padding: 2rem;
   transition: 0.5s;
+  z-index: 1;
 }
 
 .links_container {
   display: flex;
   align-items: center;
+  gap: 2rem;
 }
 
 .links_container a,

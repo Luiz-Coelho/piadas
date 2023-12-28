@@ -13,7 +13,7 @@ export default function SearchBox({ onClick, onChange }) {
     <div className={styles.search_box_container}>
       <input
         type="text"
-        placeholder="Buscar por palavra chave"
+        placeholder="Buscar piada que contenha palavra chave"
         onChange={onChange}
         onKeyDown={handleKeyDown}
       />

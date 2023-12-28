@@ -61,6 +61,9 @@ export default function JokeForm({ handleSubmit, getData }) {
   }
   return (
     <form onSubmit={submit} className={styles.form_container}>
+      <div className={styles.header_div}>
+        <h2>Piada Personalizada</h2>
+      </div>
       <Select
         name={"languages"}
         value={selectedLanguage}

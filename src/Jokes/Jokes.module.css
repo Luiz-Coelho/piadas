@@ -1,25 +1,24 @@
 .jokes_container {
-  margin-top: 1rem;
+  margin-top: 3rem;
   width: 100%;
   padding: 0 0 2rem;
   display: flex;
   flex-direction: column;
-}
-
-.jokes_header {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  row-gap: 2rem;
 }
 
-.buttons_div {
-  display: flex;
-  gap: 4rem;
+.border_div {
+  border-top: 1px solid #dbdbdb;
+  width: 35rem;
 }
 
-.buttons_div button,
-a {
+.submit_joke_button {
+  text-align: center;
+}
+
+.random_joke_button,
+.submit_joke_button {
   background-color: black;
   color: white;
   text-decoration: none;
@@ -29,15 +28,11 @@ a {
   cursor: pointer;
   font-size: 1rem;
   transition: 0.5s;
+  width: 30rem;
 }
 
-.buttons_div button:hover,
-a:hover {
+.random_joke_button:hover,
+.submit_joke_button:hover {
   background-color: #fbbc39;
   color: black;
-}
-
-.form_div {
-  margin: 0 auto;
-  padding: 2rem;
 }

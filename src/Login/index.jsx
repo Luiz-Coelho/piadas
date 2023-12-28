@@ -7,7 +7,7 @@ import Container from "../components/Container";
 export default function Login() {
   return (
     <Container>
-      <section className={styles.login_container}>
+      <div className={styles.login_container}>
         <h2>Login</h2>
         <LoginForm></LoginForm>
         <div className={styles.new_acc_div}>
@@ -20,7 +20,7 @@ export default function Login() {
             </span>
           </p>
         </div>
-      </section>
+      </div>
     </Container>
   );
 }
