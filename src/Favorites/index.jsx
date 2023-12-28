@@ -9,7 +9,7 @@ export default function Favorites() {
   const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/favorites", {
+    fetch("https://piadas-backend.onrender.com/api/favorites", {
       method: "GET",
       headers: {
         "Content-type": "application/json",
@@ -26,7 +26,7 @@ export default function Favorites() {
   }, []);
 
   const removeFavorite = (id) => {
-    fetch(`http://localhost:5000/api/favorites/${id}`, {
+    fetch(`https://piadas-backend.onrender.com/api/favorites/${id}`, {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",

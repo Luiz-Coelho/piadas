@@ -20,17 +20,20 @@ export const useLogin = () => {
     setIsLoading(true);
     setError(null);
 
-    const response = await fetch("http://localhost:5000/api/login", {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({
-        email,
-        password,
-      }),
-      credentials: "include",
-    });
+    const response = await fetch(
+      "https://piadas-backend.onrender.com/api/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          password,
+        }),
+        credentials: "include",
+      }
+    );
 
     const json = await response.json();
 

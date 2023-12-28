@@ -34,7 +34,7 @@ export default function UserProfileForm() {
   const [validMatch, setValidMatch] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/user/${user._id}`, {
+    fetch(`https://piadas-backend.onrender.com/api/user/${user._id}`, {
       method: "GET",
       headers: {
         "Content-type": "application/json",
@@ -76,7 +76,7 @@ export default function UserProfileForm() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/user/${user._id}`,
+        `https://piadas-backend.onrender.com/api/user/${user._id}`,
         {
           method: "PUT",
           body: formData,
