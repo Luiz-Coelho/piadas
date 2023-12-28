@@ -1,8 +1,8 @@
 .form_container {
   display: flex;
   flex-direction: column;
-  gap: 2em;
-  padding: 2em;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .form_container button {
@@ -10,9 +10,9 @@
   color: black;
   text-decoration: none;
   border: none;
-  padding: 1em;
+  padding: 1rem;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1rem;
   transition: 0.5s;
 }
 
@@ -21,9 +21,9 @@
 }
 
 .edit_input {
-  font-size: 1em;
-  padding: 1em;
-  width: 20em;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 20rem;
   border: 1px solid #dbdbdb;
   background-color: rgb(245, 245, 245);
 }
@@ -42,10 +42,10 @@ input[type="file"] {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  font-size: 1em;
-  padding: 1em;
-  width: 10em;
-  height: 10em;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 10rem;
+  height: 10rem;
   border: 1px solid #dbdbdb;
   border-radius: 50%;
   background-color: rgb(245, 245, 245);
@@ -63,8 +63,8 @@ input[type="file"] {
   position: absolute;
   bottom: 20px;
   right: 33%;
-  width: 1em;
-  height: 1em;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -72,20 +72,20 @@ input[type="file"] {
 }
 
 .delete_btn svg {
-  padding: 1em;
-  font-size: 1em;
+  padding: 1rem;
+  font-size: 1rem;
   color: black;
   position: absolute;
 }
 
 .no_picture {
-  font-size: 5em;
+  font-size: 5rem;
 }
 
 .file_name {
   text-align: center;
-  font-size: 0.8em;
-  margin-top: 1em;
+  font-size: 0.8rem;
+  margin-top: 1rem;
 }
 
 .input_div {
@@ -97,12 +97,12 @@ input[type="file"] {
 .instructions {
   background-color: black;
   color: white;
-  font-size: 0.75em;
-  padding: 1em;
+  font-size: 0.75rem;
+  padding: 1rem;
   text-wrap: wrap;
-  border-radius: 1em;
-  max-width: 25em;
-  margin: 1em auto;
+  border-radius: 1rem;
+  max-width: 25rem;
+  margin: 1rem auto;
 }
 
 .valid {

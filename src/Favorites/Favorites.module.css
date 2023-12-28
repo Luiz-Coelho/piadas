@@ -1,5 +1,5 @@
 .favorites_container {
-  padding: 2em;
+  padding: 2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -9,29 +9,29 @@
   background-color: black;
   text-align: center;
   color: #fbbc39;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .no_favorites {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2rem;
   margin: 0 auto;
   text-align: center;
 }
 
 .no_favorites p {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .no_favorites a {
-  width: 30em;
+  width: 30rem;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0);
   color: black;
   border: none;
   text-decoration: underline;
-  margin-left: -0.5em;
+  margin-left: -0.5rem;
 }
 
 .no_favorites a:hover {
@@ -41,25 +41,25 @@
 .favorites_grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2em;
+  gap: 2rem;
 }
 
 .title_card_container {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   text-align: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .single_joke {
   border: 1px solid #222;
-  border-radius: 1em;
+  border-radius: 1rem;
   background-color: black;
   color: white;
-  padding: 2em;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .single_joke h2 {
@@ -67,23 +67,23 @@
 }
 
 .single_joke svg {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .twopart_joke {
   border: 1px solid #222;
-  border-radius: 1em;
+  border-radius: 1rem;
   background-color: black;
   color: white;
-  padding: 2em;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .twopart_joke h2 {
   color: white;
 }
 .twopart_joke svg {
-  font-size: 2em;
+  font-size: 2rem;
 }

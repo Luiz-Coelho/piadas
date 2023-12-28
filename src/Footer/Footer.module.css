@@ -8,13 +8,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 3em;
-  padding: 2em;
+  gap: 3rem;
+  padding: 2rem;
 }
 
 .social_media_container {
   display: flex;
-  gap: 2em;
+  gap: 2rem;
 }
 
 .social_media_container a {
@@ -25,7 +25,7 @@
 }
 
 .social_media_container svg {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   cursor: pointer;
   transition: 0.5s;
 }

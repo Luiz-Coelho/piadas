@@ -4,11 +4,11 @@
   left: 0;
   right: 0;
   background-color: black;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: end;
-  padding: 1em;
+  padding: 1rem;
   transition: 0.5s;
   border-bottom: 1px solid gray;
 }
@@ -25,7 +25,7 @@ button {
   color: white;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .links_container a:hover,
@@ -35,16 +35,16 @@ button:hover {
 }
 
 button {
-  padding: 1em;
+  padding: 1rem;
 }
 
 svg {
   padding-top: 5px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 img {
-  width: 2em;
+  width: 2rem;
 }
 
 .auth_div {
@@ -56,8 +56,8 @@ img {
 .profile_picture {
   border: 2px solid white;
   transition: 0.5s;
-  width: 1.1em;
-  height: 1.1em;
+  width: 1.1rem;
+  height: 1.1rem;
   border-radius: 50%;
   object-fit: fill;
   margin-top: 8px;

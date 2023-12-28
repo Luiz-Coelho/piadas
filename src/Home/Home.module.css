@@ -1,5 +1,5 @@
 .home_container {
-  padding: 2em;
+  padding: 2rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -9,14 +9,14 @@
 }
 
 h1 {
-  margin-bottom: 2em;
-  padding: 1em 2em;
-  border-radius: 1em;
-  font-size: 3em;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 3rem;
 }
 
 .briefing_container {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .link {

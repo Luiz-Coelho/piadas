@@ -1,6 +1,6 @@
 .jokes_container {
   width: 100%;
-  padding: 0 0 2em;
+  padding: 0 0 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 2em;
+  padding: 2rem;
 }
 
 .jokes_header button,
@@ -18,10 +18,10 @@ a {
   color: white;
   text-decoration: none;
   border: 1px solid gray;
-  border-radius: 2em;
-  padding: 1em;
+  border-radius: 2rem;
+  padding: 1rem;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1rem;
   transition: 0.5s;
 }
 
@@ -33,5 +33,5 @@ a:hover {
 
 .form_div {
   margin: 0 auto;
-  padding: 2em;
+  padding: 2rem;
 }
