@@ -1,7 +1,5 @@
 .footer_container {
-  position: sticky;
-  top: 100%;
-  width: 100%;
+  margin-top: auto;
   background-color: black;
   color: white;
   display: flex;

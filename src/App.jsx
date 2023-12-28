@@ -15,22 +15,20 @@ import UserProfile from "./UserProfile";
 
 export default function App() {
   return (
-    <>
+    <div className={styles.main_container}>
       <Navbar />
-      <div className={styles.main_container}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/jokes" element={<Jokes />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route element={<RequireAuth />}>
-            <Route path="/favorites" element={<Favorites />} />
-            <Route path="/user/:id" element={<UserProfile />} />
-          </Route>
-          <Route path="*" element={<Missing />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/jokes" element={<Jokes />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route element={<RequireAuth />}>
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/user/:id" element={<UserProfile />} />
+        </Route>
+        <Route path="*" element={<Missing />} />
+      </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
