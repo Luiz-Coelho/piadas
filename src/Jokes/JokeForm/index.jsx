@@ -16,7 +16,7 @@ export default function JokeForm({ handleSubmit, getData }) {
   function submit(e) {
     e.preventDefault();
 
-    let url = `joke/${selectedCategory}?blacklistFlags=nsfw,religious,political,racist,sexist,explicit`;
+    let url = `joke/${selectedCategory}?`;
 
     if (selectedLanguage !== "en") {
       url += `lang=${selectedLanguage}&`;
@@ -24,6 +24,9 @@ export default function JokeForm({ handleSubmit, getData }) {
     if (type !== "any") {
       url += `&type=${type}`;
     }
+
+    url += "blacklistFlags=nsfw,religious,political,racist,sexist,explicit";
+
     handleSubmit(url);
   }
 

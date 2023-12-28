@@ -17,7 +17,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <main className={styles.main_container}>
+      <div className={styles.main_container}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/jokes" element={<Jokes />} />
@@ -29,7 +29,7 @@ export default function App() {
           </Route>
           <Route path="*" element={<Missing />} />
         </Routes>
-      </main>
+      </div>
       <Footer />
     </>
   );

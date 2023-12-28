@@ -1,16 +1,14 @@
 .navbar_container {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
   background-color: black;
-  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: end;
   padding: 1rem;
   transition: 0.5s;
-  border-bottom: 1px solid gray;
 }
 
 .links_container {
@@ -25,7 +23,7 @@ button {
   color: white;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .links_container a:hover,
@@ -34,17 +32,9 @@ button:hover {
   background-color: rgba(0, 0, 0, 0);
 }
 
-button {
-  padding: 1rem;
-}
-
 svg {
   padding-top: 5px;
-  font-size: 1.1rem;
-}
-
-img {
-  width: 2rem;
+  font-size: 2rem;
 }
 
 .auth_div {
