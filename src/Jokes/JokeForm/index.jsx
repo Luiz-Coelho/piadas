@@ -77,8 +77,8 @@ export default function JokeForm({ handleSubmit, getData }) {
       />
       <Radio onChange={handleType} />
       <div className={styles.form_controls}>
-        <button type="reset">Reset</button>
-        <button type="submit">Submit</button>
+        <button type="reset">Resetar</button>
+        <button type="submit">Pesquisar</button>
       </div>
     </form>
   );

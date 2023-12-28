@@ -1,4 +1,5 @@
 .jokes_container {
+  margin-top: 1rem;
   width: 100%;
   padding: 0 0 2rem;
   display: flex;
@@ -7,12 +8,17 @@
 
 .jokes_header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 2rem;
+  gap: 3rem;
 }
 
-.jokes_header button,
+.buttons_div {
+  display: flex;
+  gap: 4rem;
+}
+
+.buttons_div button,
 a {
   background-color: black;
   color: white;
@@ -25,7 +31,7 @@ a {
   transition: 0.5s;
 }
 
-.jokes_header button:hover,
+.buttons_div button:hover,
 a:hover {
   background-color: #fbbc39;
   color: black;

@@ -3,7 +3,7 @@ import styles from "./Radio.module.css";
 export default function Radio({ onChange }) {
   return (
     <fieldset className={styles.radio_container}>
-      <legend>Select the type</legend>
+      <legend>Selecione o tipo</legend>
       <div className={styles.radio_option}>
         <label htmlFor={"any"}>Any</label>
         <input

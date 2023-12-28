@@ -3,6 +3,9 @@
   display: flex;
   border-radius: 2rem;
   border: 2px solid gray;
+  width: 25%;
+  min-width: 300px;
+  max-width: 425px;
 }
 
 .search_box_container input {
@@ -10,9 +13,9 @@
   background-color: black;
   color: white;
   padding: 1rem;
-  width: 40rem;
   border-radius: 2rem 0 0 2rem;
   font-size: 1rem;
+  width: 100%;
 }
 
 .search_box_container input::placeholder {
