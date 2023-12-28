@@ -9,7 +9,7 @@
 }
 
 h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 15rem;
   padding: 1rem 2rem;
   border-radius: 1rem;
   font-size: 3rem;
@@ -20,18 +20,11 @@ h1 {
 }
 
 .link {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
   color: black;
-  text-decoration: underline;
-  margin-left: -10px;
+  margin-left: 1rem;
   transition: 0.5s;
 }
 
 .link:hover {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
   color: blue;
-  text-decoration: underline;
-  margin-left: -10px;
 }
