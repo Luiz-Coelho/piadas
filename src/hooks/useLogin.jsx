@@ -31,7 +31,6 @@ export const useLogin = () => {
           email,
           password,
         }),
-        credentials: "include",
       }
     );
 

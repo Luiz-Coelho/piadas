@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
+import Cookies from "js-cookie";
+
 import { MdCloudUpload } from "react-icons/md";
 import { FaTrash, FaCheck, FaTimes, FaInfoCircle } from "react-icons/fa";
 
@@ -13,6 +15,8 @@ const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
 export default function UserProfileForm() {
   const { user } = useAuth();
+
+  const token = Cookies.get("user");
 
   const navigate = useNavigate();
 
@@ -34,12 +38,12 @@ export default function UserProfileForm() {
   const [validMatch, setValidMatch] = useState(false);
 
   useEffect(() => {
-    fetch(`https://piadas-backend.onrender.com/api/user/${user._id}`, {
+    fetch(`https://piadas-backend.onrender.com/api/user`, {
       method: "GET",
       headers: {
         "Content-type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
-      credentials: "include",
     })
       .then((resp) => resp.json())
       .then((data) => {
@@ -76,11 +80,13 @@ export default function UserProfileForm() {
 
     try {
       const response = await fetch(
-        `https://piadas-backend.onrender.com/api/user/${user._id}`,
+        `https://piadas-backend.onrender.com/api/user`,
         {
           method: "PUT",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
           body: formData,
-          credentials: "include",
         }
       );
 

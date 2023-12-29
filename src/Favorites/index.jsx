@@ -13,8 +13,8 @@ export default function Favorites() {
       method: "GET",
       headers: {
         "Content-type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
-      credentials: "include",
     })
       .then((resp) => resp.json())
       .then((data) => {
@@ -30,8 +30,8 @@ export default function Favorites() {
       method: "DELETE",
       headers: {
         "Content-type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
-      credentials: "include",
     })
       .then((resp) => resp.json())
       .then((data) => {
