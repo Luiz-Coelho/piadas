@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+import useAuth from "../hooks/useAuth";
 
 import Cookies from "js-cookie";
 
 import Message from "../components/Message";
-import { Link } from "react-router-dom";
 import JokeForm from "./JokeForm";
 import SearchBox from "./SearchBox";
 import JokeResponse from "./JokeResponse";
@@ -12,7 +14,9 @@ import Container from "../components/Container";
 import styles from "./Jokes.module.css";
 
 export default function Jokes() {
-  const token = Cookies.get;
+  const { user } = useAuth();
+
+  const token = Cookies.get(user);
 
   const [jokeData, setJokeData] = useState("");
   const [keyword, setKeyword] = useState("");
@@ -24,7 +28,6 @@ export default function Jokes() {
       method: "GET",
       headers: {
         "Content-type": "application/json",
-        Authorization: `Bearer ${token}`,
       },
     }).then((resp) => resp.json());
   }
