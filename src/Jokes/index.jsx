@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 import useAuth from "../hooks/useAuth";
 
@@ -17,6 +17,8 @@ export default function Jokes() {
   const { user } = useAuth();
 
   const token = Cookies.get("user");
+
+  const navigate = useNavigate();
 
   const [jokeData, setJokeData] = useState("");
   const [keyword, setKeyword] = useState("");
@@ -64,6 +66,10 @@ export default function Jokes() {
   }
 
   const addFavorite = () => {
+    if (!user) {
+      navigate("/login");
+    }
+
     fetch("https://piadas-backend.onrender.com/api/favorites", {
       method: "POST",
       headers: {
