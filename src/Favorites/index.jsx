@@ -1,12 +1,17 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
+import Cookies from "js-cookie";
+
+import Container from "../components/Container";
+import FavoriteCard from "./FavoriteCard";
 
 import styles from "./Favorites.module.css";
-import FavoriteCard from "./FavoriteCard";
-import { Link } from "react-router-dom";
-import Container from "../components/Container";
 
 export default function Favorites() {
   const [favorites, setFavorites] = useState([]);
+
+  const token = Cookies.get("user");
 
   useEffect(() => {
     fetch("https://piadas-backend.onrender.com/api/favorites", {
