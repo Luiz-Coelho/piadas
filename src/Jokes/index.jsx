@@ -55,7 +55,7 @@ export default function Jokes() {
   }
 
   const addFavorite = () => {
-    fetch("http://localhost:5000/api/favorites", {
+    fetch("https://piadas-backend.onrender.com/api/favorites", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
