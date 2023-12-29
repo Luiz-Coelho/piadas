@@ -16,7 +16,7 @@ import styles from "./Jokes.module.css";
 export default function Jokes() {
   const { user } = useAuth();
 
-  const token = Cookies.get(user);
+  const token = Cookies.get("user");
 
   const [jokeData, setJokeData] = useState("");
   const [keyword, setKeyword] = useState("");
