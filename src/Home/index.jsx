@@ -11,7 +11,9 @@ export default function Home() {
           <p>
             Você pode dar início a sua jornada nesse site indo na aba de Piadas
             ou
-            <Link className={styles.link}>Clicando aqui</Link>
+            <Link to={"/jokes"} className={styles.link}>
+              Clicando aqui
+            </Link>
           </p>
         </div>
       </section>
