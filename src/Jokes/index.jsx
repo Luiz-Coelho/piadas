@@ -79,7 +79,10 @@ export default function Jokes() {
       body: JSON.stringify(jokeData),
     })
       .then((resp) => resp.json())
-      .then((data) => console.log(data))
+      .then((data) => {
+        console.log(data);
+        setMessage("Piada adicionada a sua lista de favoritos");
+      })
       .catch((error) => console.log(error));
   };
 
