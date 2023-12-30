@@ -3,7 +3,7 @@
   display: flex;
   border-radius: 2rem;
   border: 2px solid gray;
-  width: 30rem;
+  width: min(85vw, 30rem);
 }
 
 .search_box_container input {
