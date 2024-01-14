@@ -1,13 +1,14 @@
 .select_div {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   gap: 1rem;
 }
 
-select {
+.select_div select {
   padding: 0.5rem;
-  border: 1px solid gray;
-  border-radius: 2rem;
-  font-size: 14px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 100vw;
+  color: white;
 }

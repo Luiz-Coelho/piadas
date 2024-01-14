@@ -1,53 +1,31 @@
 .navbar_container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
   background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+.nav_list {
   display: flex;
   align-items: center;
   justify-content: end;
-  padding: 2rem;
-  transition: 0.5s;
-  z-index: 1;
-}
-
-.links_container {
-  display: flex;
-  align-items: center;
   gap: 2rem;
+  font-size: 1.3rem;
 }
 
-.links_container a,
+.nav_list a,
 button {
   text-decoration: none;
-  border: none;
-  color: white;
-  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
-  font-size: 1.5rem;
 }
 
-.links_container a:hover,
+.nav_list a:hover,
 button:hover {
   color: #fbbc39;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-svg {
-  padding-top: 5px;
-  font-size: 2rem;
-}
-
-.auth_div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: 0.5s;
 }
 
 .profile_picture {
   border: 2px solid white;
-  transition: 0.5s;
   width: 1.1rem;
   height: 1.1rem;
   border-radius: 50%;
@@ -57,4 +35,5 @@ svg {
 
 .profile_picture:hover {
   border: 2px solid #fbbc39;
+  transition: 0.5s;
 }

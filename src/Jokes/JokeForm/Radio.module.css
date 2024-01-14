@@ -1,15 +1,12 @@
 .radio_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   padding: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .radio_option {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-inline: 0.5rem 1rem;
+  gap: 1rem;
 }
 
 .radio_option:last-of-type {

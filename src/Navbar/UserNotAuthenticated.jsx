@@ -4,9 +4,11 @@ import { VscAccount } from "react-icons/vsc";
 
 const UserNotAuthenticated = () => {
   return (
-    <Link to={"/login"}>
-      <VscAccount />
-    </Link>
+    <li>
+      <Link to={"/login"}>
+        <VscAccount />
+      </Link>
+    </li>
   );
 };
 

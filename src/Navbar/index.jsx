@@ -12,13 +12,23 @@ export default function Navbar() {
 
   return (
     <header className={styles.navbar_container}>
-      <div className={styles.links_container}>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/jokes"}>Piadas</Link>
-        <Link to={"/favorites"}>
-          <FaRegHeart />
-        </Link>
-        {user ? <UserAuthenticated /> : <UserNotAuthenticated />}
+      <div className={styles.nav_wrapper}>
+        <nav>
+          <ul role="list" className={styles.nav_list}>
+            <li>
+              <Link to={"/"}>Home</Link>
+            </li>
+            <li>
+              <Link to={"/jokes"}>Piadas</Link>
+            </li>
+            <li>
+              <Link to={"/favorites"}>
+                <FaRegHeart />
+              </Link>
+            </li>
+            {user ? <UserAuthenticated /> : <UserNotAuthenticated />}
+          </ul>
+        </nav>
       </div>
     </header>
   );

@@ -13,12 +13,10 @@ export default function Register() {
         <RegisterForm></RegisterForm>
         <div className={styles.already_registered_div}>
           <p>
-            Já tem uma conta?
-            <span>
-              <Link to={"/register"} className={styles.already_registered_link}>
-                Login aqui
-              </Link>
-            </span>
+            Já tem uma conta?{" "}
+            <Link to={"/register"} className={styles.already_registered_link}>
+              Fazer login
+            </Link>
           </p>
         </div>
       </section>

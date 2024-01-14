@@ -79,10 +79,12 @@ export default function JokeForm({ handleSubmit, getData }) {
         text={"Selecione a categoria"}
       />
       <Radio onChange={handleType} />
-      <div className={styles.form_controls}>
-        <button type="reset">Resetar</button>
-        <button type="submit">Pesquisar</button>
-      </div>
+      <button type="reset" className={styles.reset_button}>
+        Resetar
+      </button>
+      <button type="submit" className={styles.submit_button}>
+        Pesquisar
+      </button>
     </form>
   );
 }

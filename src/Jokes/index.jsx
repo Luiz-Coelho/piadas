@@ -92,9 +92,9 @@ export default function Jokes() {
         <button onClick={randomJoke} className={styles.random_joke_button}>
           Ver piada aleatória
         </button>
-        <div className={styles.border_div}></div>
-        <SearchBox onClick={clickSearch} onChange={handleSearch} />
-        <div className={styles.border_div}></div>
+        <div className={styles.search_box_div}>
+          <SearchBox onClick={clickSearch} onChange={handleSearch} />
+        </div>
         <div className={styles.form_div}>
           {formVisibility && (
             <JokeForm getData={getData} handleSubmit={handleSubmit} />
@@ -113,13 +113,12 @@ export default function Jokes() {
             />
           )}
         </div>
-        <div className={styles.border_div}></div>
         <Link
           to={"https://sv443.net/jokeapi/v2/#submit"}
           target="_blank"
           className={styles.submit_joke_button}
         >
-          Enviar uma piada
+          Nos envie uma piada
         </Link>
       </section>
     </Container>

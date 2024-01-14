@@ -33,7 +33,9 @@ export default function LoginForm() {
   return (
     <form onSubmit={handleSubmit} className={styles.form_container}>
       <div className={styles.input_div}>
-        <VscAccount />
+        <label htmlFor="email">
+          <VscAccount />
+        </label>
         <input
           name="email"
           id="email"
@@ -47,7 +49,9 @@ export default function LoginForm() {
         />
       </div>
       <div className={styles.input_div}>
-        <CiLock />
+        <label htmlFor="password">
+          <CiLock />
+        </label>
         <input
           name="password"
           id="password"

@@ -5,7 +5,6 @@ export default function Radio({ onChange }) {
     <fieldset className={styles.radio_container}>
       <legend>Selecione o tipo</legend>
       <div className={styles.radio_option}>
-        <label htmlFor={"any"}>Any</label>
         <input
           type="radio"
           value="any"
@@ -13,9 +12,9 @@ export default function Radio({ onChange }) {
           id="any"
           onChange={onChange}
         />
+        <label htmlFor={"any"}>Any</label>
       </div>
       <div className={styles.radio_option}>
-        <label htmlFor={"single"}>Single</label>
         <input
           type="radio"
           value="single"
@@ -23,9 +22,9 @@ export default function Radio({ onChange }) {
           id="single"
           onChange={onChange}
         />
+        <label htmlFor={"single"}>Single</label>
       </div>
       <div className={styles.radio_option}>
-        <label htmlFor={"twopart"}>Two parts</label>
         <input
           type="radio"
           value="twopart"
@@ -33,6 +32,7 @@ export default function Radio({ onChange }) {
           id="twopart"
           onChange={onChange}
         />
+        <label htmlFor={"twopart"}>Two parts</label>
       </div>
     </fieldset>
   );

@@ -10,7 +10,7 @@ export default function Home() {
         <div className={styles.briefing_container}>
           <p>
             Você pode dar início a sua jornada nesse site indo na aba de Piadas
-            ou
+            ou{" "}
             <Link to={"/jokes"} className={styles.link}>
               Clicando aqui
             </Link>

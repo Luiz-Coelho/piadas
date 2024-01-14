@@ -18,20 +18,24 @@ const UserAuthenticated = () => {
 
   return (
     <>
-      <Link to={`/user/${user._id}`}>
-        {user.profilePicture ? (
-          <img
-            src={`${s3Url}${user.profilePicture}`}
-            alt="ProfilePicture"
-            className={styles.profile_picture}
-          />
-        ) : (
-          <FaRegUser />
-        )}
-      </Link>
-      <button onClick={handleLogout}>
-        <RiLogoutBoxRLine />
-      </button>
+      <li>
+        <Link to={`/user/${user._id}`}>
+          {user.profilePicture ? (
+            <img
+              src={`${s3Url}${user.profilePicture}`}
+              alt="ProfilePicture"
+              className={styles.profile_picture}
+            />
+          ) : (
+            <FaRegUser />
+          )}
+        </Link>
+      </li>
+      <li>
+        <button onClick={handleLogout}>
+          <RiLogoutBoxRLine />
+        </button>
+      </li>
     </>
   );
 };
