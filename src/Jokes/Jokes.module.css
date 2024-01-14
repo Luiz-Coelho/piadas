@@ -11,7 +11,7 @@
   .jokes_container {
     grid-template-columns: max-content auto;
     place-content: center;
-    place-items: center;
+    place-items: start;
   }
 
   .jokes_container > * {
@@ -21,6 +21,18 @@
   .form_div {
     grid-column: 2;
     grid-row: 1 / 4;
+  }
+}
+
+@media (min-width: 880px) {
+  .jokes_container {
+    column-gap: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .jokes_container {
+    column-gap: 12rem;
   }
 }
 
