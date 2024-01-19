@@ -1,11 +1,22 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import styles from "./JokeForm.module.css";
+
 import Select from "./Select";
 import Checkbox from "./Checkbox";
 import Radio from "./Radio";
 import Loading from "../../components/Loading";
 
-export default function JokeForm({ handleSubmit, getData }) {
+import SearchBox from "./SearchBox";
+
+export default function JokeForm({
+  handleSubmit,
+  getData,
+  randomJoke,
+  clickSearch,
+  handleSearch,
+}) {
   const [projectData, setProjectData] = useState({});
   const [loading, setLoading] = useState(true);
 
@@ -60,31 +71,48 @@ export default function JokeForm({ handleSubmit, getData }) {
     return <Loading />;
   }
   return (
-    <form onSubmit={submit} className={styles.form_container}>
-      <div className={styles.header_div}>
-        <h2>Piada Personalizada</h2>
+    <section className={styles.jokes_container}>
+      <button onClick={randomJoke} className={styles.random_joke_button}>
+        Ver piada aleatória
+      </button>
+      <div className={styles.search_box_div}>
+        <SearchBox onClick={clickSearch} onChange={handleSearch} />
       </div>
-      <Select
-        name={"languages"}
-        value={selectedLanguage}
-        options={projectData[0]?.jokeLanguages || []}
-        onChange={handleLanguage}
-        text={"Selecione o idioma"}
-      />
-      <Select
-        name={"categories"}
-        value={selectedCategory}
-        options={projectData[1]?.categories || []}
-        onChange={handleCategory}
-        text={"Selecione a categoria"}
-      />
-      <Radio onChange={handleType} />
-      <button type="reset" className={styles.reset_button}>
-        Resetar
-      </button>
-      <button type="submit" className={styles.submit_button}>
-        Pesquisar
-      </button>
-    </form>
+      <div className={styles.form_div}>
+        <form onSubmit={submit} className={styles.form_container}>
+          <div className={styles.header_div}>
+            <h2>Piada Personalizada</h2>
+          </div>
+          <Select
+            name={"languages"}
+            value={selectedLanguage}
+            options={projectData[0]?.jokeLanguages || []}
+            onChange={handleLanguage}
+            text={"Selecione o idioma"}
+          />
+          <Select
+            name={"categories"}
+            value={selectedCategory}
+            options={projectData[1]?.categories || []}
+            onChange={handleCategory}
+            text={"Selecione a categoria"}
+          />
+          <Radio onChange={handleType} />
+          <button type="reset" className={styles.reset_button}>
+            Resetar
+          </button>
+          <button type="submit" className={styles.submit_button}>
+            Pesquisar
+          </button>
+        </form>
+      </div>
+      <Link
+        to={"https://sv443.net/jokeapi/v2/#submit"}
+        target="_blank"
+        className={styles.submit_joke_button}
+      >
+        Envie uma piada
+      </Link>
+    </section>
   );
 }

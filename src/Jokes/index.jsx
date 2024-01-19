@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import useAuth from "../hooks/useAuth";
 
@@ -7,11 +7,8 @@ import Cookies from "js-cookie";
 
 import Message from "../components/Message";
 import JokeForm from "./JokeForm";
-import SearchBox from "./SearchBox";
 import JokeResponse from "./JokeResponse";
 import Container from "../components/Container";
-
-import styles from "./Jokes.module.css";
 
 export default function Jokes() {
   const { user } = useAuth();
@@ -86,41 +83,33 @@ export default function Jokes() {
       .catch((error) => console.log(error));
   };
 
+  const otherJoke = () => {};
+
   return (
     <Container>
-      <section className={styles.jokes_container}>
-        <button onClick={randomJoke} className={styles.random_joke_button}>
-          Ver piada aleatória
-        </button>
-        <div className={styles.search_box_div}>
-          <SearchBox onClick={clickSearch} onChange={handleSearch} />
-        </div>
-        <div className={styles.form_div}>
-          {formVisibility && (
-            <JokeForm getData={getData} handleSubmit={handleSubmit} />
-          )}
-          {!formVisibility && jokeData && (
-            <JokeResponse
-              single={jokeData.joke}
-              setup={jokeData.setup}
-              delivery={jokeData.delivery}
-              error={jokeData.error}
-              message={jokeData.message}
-              addFavorite={addFavorite}
-              otherJoke={() => {
-                setFormVisibility(true);
-              }}
-            />
-          )}
-        </div>
-        <Link
-          to={"https://sv443.net/jokeapi/v2/#submit"}
-          target="_blank"
-          className={styles.submit_joke_button}
-        >
-          Nos envie uma piada
-        </Link>
-      </section>
+      {formVisibility && (
+        <JokeForm
+          getData={getData}
+          handleSubmit={handleSubmit}
+          randomJoke={randomJoke}
+          clickSearch={clickSearch}
+          handleSearch={handleSearch}
+        />
+      )}
+      {!formVisibility && jokeData && (
+        <JokeResponse
+          single={jokeData.joke}
+          setup={jokeData.setup}
+          delivery={jokeData.delivery}
+          error={jokeData.error}
+          message={jokeData.message}
+          addFavorite={addFavorite}
+          otherJoke={otherJoke}
+          changeFormParams={() => {
+            setFormVisibility(true);
+          }}
+        />
+      )}
     </Container>
   );
 }
