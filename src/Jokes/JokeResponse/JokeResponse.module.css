@@ -1,0 +1,59 @@
+.response_container {
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+}
+
+.response_wrapper {
+  display: grid;
+  gap: 1rem;
+  background-color: black;
+  color: white;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.controls_div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.controls_div svg {
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+
+.controls_div :is(button) {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.controls_div :is(button):hover {
+  color: #fbbc39;
+  transition: 0.5s;
+}
+
+.submit_joke_button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 1px solid gray;
+  border-radius: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.submit_joke_button:hover {
+  transition: 0.5s;
+  background-color: #fbbc39;
+  color: black;
+}

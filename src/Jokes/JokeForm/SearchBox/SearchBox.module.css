@@ -1,0 +1,35 @@
+.search_box_container {
+  background-color: black;
+  display: flex;
+  border-radius: 2rem;
+  border: 2px solid gray;
+}
+
+.search_box_container input {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 2rem 0 0 2rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.search_box_container input::placeholder {
+  color: #7b7b7b;
+  text-align: center;
+}
+
+.search_box_container button {
+  border: none;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  cursor: pointer;
+  width: 4rem;
+  border-radius: 0 2rem 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid gray;
+  font-size: 1.1rem;
+}
